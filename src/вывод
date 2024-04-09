@@ -1,0 +1,7 @@
+The "DatabaseConnection" project is an example of using the Singleton design pattern to manage a database connection. The main idea is to provide a single instance of a class for accessing the database, which can be useful for ensuring efficiency and security in applications.
+
+The project uses the Java programming language with the JDBC library for interacting with the MySQL database. The Properties class is used to work with a configuration file, which allows loading connection parameters (host, username, password, etc.) from an external file.
+
+The main functionality of the DatabaseConnection class includes establishing a connection to the database, executing SQL queries, and retrieving results. Additionally, there are methods for loading configuration from a file, getting connection information, and executing queries.
+
+The Singleton pattern ensures that the DatabaseConnection class has only one instance, which is used by all clients. This ensures efficient management of the database connection and prevents the creation of additional instances, which can lead to performance and security issues.
